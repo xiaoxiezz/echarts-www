@@ -215,18 +215,6 @@ async function buildJade(config) {
             cfg.pageConfig = {};
         }
 
-        // This props can be read in jade tpl, like: `#{cdnPayRoot}`
-        assert(
-            cfg.cdnPayRoot
-            && cfg.cdnFreeRoot
-            && cfg.host
-            && cfg.cdnThirdParty
-            && cfg.galleryPath
-            && cfg.releaseDestDir
-            && cfg.homeVersion
-            && cfg.cdnPayVersion
-        );
-
         return cfg;
     }
 
