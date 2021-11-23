@@ -1,7 +1,7 @@
 const path = require('path');
 const config = require('./common');
 
-config.host = 'https://echarts.apache.org';
+config.host = '';
 
 config.cdnPayRootMap = {
     // Expensive!!! use it carefully.
@@ -19,7 +19,7 @@ config.cdnFreeRootMap = {
     zh: '',
     en: ''
 };
-config.galleryPath = 'https://echarts.apache.org/examples/';
+config.galleryPath = '/examples/';
 config.releaseDestDir = path.resolve(__dirname, '../../echarts-website');
 
 module.exports = config;
